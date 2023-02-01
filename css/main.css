@@ -1,8 +1,11 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  /* Changes background color to enable contrast */
+  background-color: #D0D6B5;
   margin: 0;
   padding: 0;
+  /* Makes line height 1.25 */
+  line-height: 1.25;
 }
 
 h1,
