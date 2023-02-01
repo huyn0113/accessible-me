@@ -37,7 +37,7 @@
     </div>
   </header>
   <main role="main">
-    <div class="main-content" id="main">
+    <div class="main-content" id="main" role="complementary">
       <h1 role="heading">Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
         eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio
@@ -46,20 +46,20 @@
         omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
         error voluptatibus.</p>
     </div>
-    <div class="owner" id="owner-info">
+    <div class="owner" id="owner-info" role="complementary">
       <h1 role="heading">Meet the owner</h1>
-      <ul>
-        <li>Name: John Doe</li>
-        <li>Title: CEO</li>
-        <li>Email: johnjoe@jambox.ca</li>
-        <li>Phone: 613-000-0000</li>
+      <ul itemscope itemtype="https://schema.org/Person">
+        <li itemprop="name">Name: John Doe</li>
+        <li itemprop="jobTitle">Title: CEO</li>
+        <li itemprop="email">Email: johnjoe@jambox.ca</li>
+        <li itemprop="phoneNumber">Phone: 613-000-0000</li>
       </ul>
       <h1 role="heading">Address</h1>
-      <p>
+      <p itemscope itemtype="https://schema.org/PostalAddress">
         Jambox Studios
-        123 Guitar Road,
-        Musicville, Danceistan
-        B3T 0L0
+        <span itemprop="streetAddress">123 Guitar Road,</span>
+        <span itemprop="addressLocality">Musicville,</span><span itemprop="addressCountry">Danceistan</span>
+        <span itemprop="postalCode">B3T 0L0</span>
       </p>
     </div>
     <div class="contact-section" id="contact">
